@@ -4,3 +4,4 @@ services:
     build:
       context: ./
       dockerfile: ./ubuntu-bionic/Dockerfile
+    image: every-distro:ubuntu-bionic

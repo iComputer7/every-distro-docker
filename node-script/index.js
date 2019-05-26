@@ -6,6 +6,7 @@
 
 const getos = require("getos");
 const http = require("http");
+const port = 8080 || process.env.PORT;
 
 http.createServer(function (req, res) {
     res.writeHead(200, {"Content-Type": "application/json"});
@@ -15,4 +16,5 @@ http.createServer(function (req, res) {
         res.write(JSON.stringify(os));
         res.end();
     });
-}).listen(8080 || process.env.PORT);
+}).listen(port);
+console.log(`Listening on ${port}`);

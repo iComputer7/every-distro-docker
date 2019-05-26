@@ -10,3 +10,8 @@ services:
       context: ./
       dockerfile: ./arch/Dockerfile
     image: every-distro:arch
+  ubuntu-disco:
+    build:
+      context: ./
+      dockerfile: ./ubuntu-disco/Dockerfile
+    image: every-distro:ubuntu-disco

@@ -5,3 +5,8 @@ services:
       context: ./
       dockerfile: ./ubuntu-bionic/Dockerfile
     image: every-distro:ubuntu-bionic
+  arch:
+    build:
+      context: ./
+      dockerfile: ./arch/Dockerfile
+    image: every-distro:arch

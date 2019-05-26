@@ -6,8 +6,13 @@
 
 const getos = require("getos");
 const http = require("http");
- 
-getos((e,os) => {
-    if (e) return console.log(e);
-    console.log("Your OS is:" + JSON.stringify(os));
-});
+
+http.createServer(function (req, res) {
+    res.writeHead(200, {"Content-Type": "application/json"});
+    getos((e,os) => {
+        if (e) return console.log(e);
+        console.log("Your OS is:" + JSON.stringify(os));
+        res.write(JSON.stringify(os));
+        res.end();
+    });
+}).listen(8080 || process.env.PORT);

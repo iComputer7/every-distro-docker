@@ -18,3 +18,5 @@ http.createServer(function (req, res) {
     });
 }).listen(port);
 console.log(`Listening on ${port}`);
+
+process.on("SIGINT", () => process.exit());

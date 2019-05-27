@@ -15,3 +15,8 @@ services:
       context: ./
       dockerfile: ./ubuntu-disco/Dockerfile
     image: every-distro:ubuntu-disco
+  alpine:
+    build:
+      context: ./
+      dockerfile: ./alpine/Dockerfile
+    image: every-distro:alpine

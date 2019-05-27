@@ -20,3 +20,13 @@ services:
       context: ./
       dockerfile: ./alpine/Dockerfile
     image: every-distro:alpine
+  nginx:
+    build: ./nginx
+    image: every-distro:nginx
+    ports:
+      - "6900:80"
+    links:
+      - ubuntu-bionic
+      - arch
+      - ubuntu-disco
+      - alpine

@@ -35,3 +35,8 @@ services:
       #context: ./
       #dockerfile: ./gentoo/Dockerfile
     #image: every-distro:gentoo
+  centos7:
+    build:
+      context: ./
+      dockerfile: ./centos7/Dockerfile
+    image: every-distro:centos7

@@ -31,6 +31,7 @@ services:
       - ubuntu-disco
       - alpine
       - centos7
+      - centos6
   #gentoo:
     #build:
       #context: ./
@@ -41,3 +42,8 @@ services:
       context: ./
       dockerfile: ./centos7/Dockerfile
     image: every-distro:centos7
+  centos6:
+    build:
+      context: ./
+      dockerfile: ./centos6/Dockerfile
+    image: every-distro:centos6

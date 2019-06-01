@@ -8,15 +8,15 @@ const getos = require("getos");
 const http = require("http");
 const port = 8080 || process.env.PORT;
 
-http.createServer(function (req, res) {
+http.createServer(function(req, res) {
     res.writeHead(200, {"Content-Type": "application/json"});
-    getos((e,os) => {
-        if (e) return console.log(e);
+    getos(function(e,os) {
+        if (e) { return console.log(e) };
         console.log("Your OS is:" + JSON.stringify(os));
         res.write(JSON.stringify(os));
         res.end();
     });
 }).listen(port);
-console.log(`Listening on ${port}`);
+console.log("Listening on " + port);
 
-process.on("SIGINT", () => process.exit());
+process.on("SIGINT", function() { process.exit() });

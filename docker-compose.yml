@@ -30,6 +30,7 @@ services:
       - arch
       - ubuntu-disco
       - alpine
+      - centos7
   #gentoo:
     #build:
       #context: ./

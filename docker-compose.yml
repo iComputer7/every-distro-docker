@@ -30,3 +30,8 @@ services:
       - arch
       - ubuntu-disco
       - alpine
+  #gentoo:
+    #build:
+      #context: ./
+      #dockerfile: ./gentoo/Dockerfile
+    #image: every-distro:gentoo

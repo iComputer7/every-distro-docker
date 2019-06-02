@@ -35,6 +35,7 @@ services:
       - amazonlinux
       - debian9
       - debian8
+      - fedora
   centos7:
     build:
       context: ./
@@ -60,3 +61,8 @@ services:
       context: ./
       dockerfile: ./debian8/Dockerfile
     image: every-distro:debian8
+  fedora:
+    build:
+      context: ./
+      dockerfile: ./fedora/Dockerfile
+    image: every-distro:fedora

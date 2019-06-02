@@ -33,6 +33,7 @@ services:
       - centos7
       - centos6
       - amazonlinux
+      - debian9
   centos7:
     build:
       context: ./
@@ -48,3 +49,8 @@ services:
       context: ./
       dockerfile: ./amazonlinux/Dockerfile
     image: every-distro:amazonlinux
+  debian9:
+    build:
+      context: ./
+      dockerfile: ./debian9/Dockerfile
+    image: every-distro:debian9

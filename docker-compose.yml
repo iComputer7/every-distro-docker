@@ -42,3 +42,8 @@ services:
       context: ./
       dockerfile: ./centos6/Dockerfile
     image: every-distro:centos6
+  amazonlinux:
+    build:
+      context: ./
+      dockerfile: ./amazonlinux/Dockerfile
+    image: every-distro:amazonl

@@ -32,11 +32,6 @@ services:
       - alpine
       - centos7
       - centos6
-  #gentoo:
-    #build:
-      #context: ./
-      #dockerfile: ./gentoo/Dockerfile
-    #image: every-distro:gentoo
   centos7:
     build:
       context: ./

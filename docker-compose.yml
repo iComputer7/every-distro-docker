@@ -47,4 +47,4 @@ services:
     build:
       context: ./
       dockerfile: ./amazonlinux/Dockerfile
-    image: every-distro:amazonl
+    image: every-distro:amazonlinux

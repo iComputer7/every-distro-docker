@@ -32,6 +32,7 @@ services:
       - alpine
       - centos7
       - centos6
+      - amazonlinux
   centos7:
     build:
       context: ./

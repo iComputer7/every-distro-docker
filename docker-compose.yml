@@ -37,6 +37,7 @@ services:
       - debian8
       - fedora
       - opensuse-tumbleweed
+      - opensuse-leap
   centos7:
     build:
       context: ./
@@ -72,3 +73,8 @@ services:
       context: ./
       dockerfile: ./opensuse-tumbleweed/Dockerfile
     image: every-distro:opensuse-tumbleweed
+  opensuse-leap:
+    build:
+      context: ./
+      dockerfile: ./opensuse-leap/Dockerfile
+    image: every-distro:opensuse-leap

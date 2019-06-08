@@ -36,6 +36,7 @@ services:
       - debian9
       - debian8
       - fedora
+      - opensuse-tumbleweed
   centos7:
     build:
       context: ./
@@ -66,3 +67,8 @@ services:
       context: ./
       dockerfile: ./fedora/Dockerfile
     image: every-distro:fedora
+  opensuse-tumbleweed:
+    build:
+      context: ./
+      dockerfile: ./opensuse-tumbleweed/Dockerfile
+    image: every-distro:opensuse-tumbleweed

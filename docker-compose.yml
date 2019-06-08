@@ -78,3 +78,8 @@ services:
       context: ./
       dockerfile: ./opensuse-leap/Dockerfile
     image: every-distro:opensuse-leap
+  oracle-7:
+    build:
+      context: ./
+      dockerfile: ./oracle-7/Dockerfile
+    image: every-distro:oracle-7

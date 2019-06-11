@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM fedora:29
 
 RUN dnf update -y && dnf install -y gcc-c++ make
 RUN curl -sL https://rpm.nodesource.com/setup_12.x | bash - && dnf install -y nodejs

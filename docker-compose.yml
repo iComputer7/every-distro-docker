@@ -89,3 +89,8 @@ services:
       context: ./
       dockerfile: ./debian10/Dockerfile
     image: every-distro:debian10
+  ubuntu-eoan:
+    build:
+      context: ./
+      dockerfile: ./ubuntu-eoan/Dockerfile
+    image: every-distro:ubuntu-eoan

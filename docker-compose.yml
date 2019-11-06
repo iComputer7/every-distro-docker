@@ -38,6 +38,7 @@ services:
       - fedora
       - opensuse-tumbleweed
       - opensuse-leap
+      - debian10
   centos7:
     build:
       context: ./
@@ -83,3 +84,8 @@ services:
       context: ./
       dockerfile: ./oracle-7/Dockerfile
     image: every-distro:oracle-7
+  debian10:
+    build:
+      context: ./
+      dockerfile: ./debian10/Dockerfile
+    image: every-distro:debian10
